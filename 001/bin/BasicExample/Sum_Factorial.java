@@ -1,29 +1,23 @@
-package ControlEx;
+package BasicExample;
 
 import java.util.Scanner;
 
 public class Sum_Factorial {
 
-	public static void main(String[] args) {
+	public static void SumOf1toNumber() {
 		Scanner scanner = new Scanner(System.in);
-		double i ,j;
-		double stack =0;
+		int i ,j;
+		int stack =0;
 		
-		System.out.print("Write number : ");
+		System.out.print("정수를 입력해주세요 : ");
 		i = scanner.nextInt();
 		
 		for (j= 0; j <= i; j++) {
 			stack +=j;
 		}
 		
-		System.out.println("Sum of 1 to "+i+" is "+stack);
-		stack =1;
-		
-		for (j = 1; j <= i; j++) {
-			stack *=j;
-		}
-		System.out.println("Factorial of "+i+" is "+stack);
-		
+		System.out.println("1에서 "+i+" 까지의 합은 : "+stack);
+		System.out.println("");
 	}
 
 }

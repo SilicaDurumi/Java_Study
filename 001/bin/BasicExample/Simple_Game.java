@@ -1,10 +1,12 @@
+package BasicExample;
+
 import java.util.Scanner;
 // add timer, current score&life, plus time when correct, hard mode
 public class Simple_Game {
 	static int life = 3;
 	static int score = 0;
 	static int userinput = 0;
-	public static void main(String[] args) {
+	public static void MuxOperationGame() {
 		
 		int a, b;
 		Scanner scanner = new Scanner(System.in);

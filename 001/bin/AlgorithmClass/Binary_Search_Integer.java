@@ -1,8 +1,9 @@
+package AlgorithmClass;
 import java.util.Scanner;
 
 public class Binary_Search_Integer {
 
-	public static void main(String[] args) {
+	public static void main() {
 
 		int [] data = {30,50,100,110,250,330,500};
 		int low = 0;

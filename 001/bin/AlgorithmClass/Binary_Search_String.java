@@ -1,8 +1,9 @@
+package AlgorithmClass;
 import java.util.Scanner;
 
 public class Binary_Search_String {
 
-	public static void main(String[] args) {
+	public static void main() {
 		String [] name = {"ABC","BCD","CDE","DEF","EFG","FGH"};
 		int low = 0;
 		int high = name.length-1;

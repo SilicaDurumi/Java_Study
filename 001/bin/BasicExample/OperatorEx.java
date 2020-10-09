@@ -12,7 +12,6 @@ public class OperatorEx {
 		int a, b, c, studentscore;
 		double result;
 		String grade;
-
 		Scanner scanner = new Scanner(System.in);
 		
 		result = 100.0*2.0/3.0%5.0;		
@@ -29,20 +28,17 @@ public class OperatorEx {
 			System.out.print("점수를 입력해주세요(0~100) >>");
 			studentscore = scanner.nextInt();
 			if (studentscore<=100&&studentscore>=0) {
-	
 				grade = studentscore >= 90 ? "A":
 											studentscore >= 80 ? "B":
 											studentscore >= 70 ? "C":
-											studentscore >= 60 ? "D" : "F";
-											
+											studentscore >= 60 ? "D" : "F";							
 				System.out.println("등급 : "+grade);
 				System.exit(0);
 			}
-			else {
+			else 
 				System.out.println("점수는 0~100 사이의 값만 입력해주세요/");
-				continue;
-			}
+				
 			}
 		}
 	}
-}
+

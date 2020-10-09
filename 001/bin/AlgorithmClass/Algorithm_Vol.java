@@ -1,3 +1,4 @@
+package AlgorithmClass;
 import java.util.Scanner;
 
 public class Algorithm_Vol {
@@ -5,7 +6,7 @@ public class Algorithm_Vol {
 	static int rand = (int)(Math.random()*50+1); 
 	static int[] arrayint = new int[7];
 	static String[] strarr = new String[7];
-	public static void main(String[] args) {
+	public static void AlgorithmSelectMenu() {
 		int i,j,m,userinput;
 		Scanner scanner = new Scanner(System.in);
 		int tempint = 0;

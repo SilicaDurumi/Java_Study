@@ -1,8 +1,9 @@
+package AlgorithmClass;
 import java.util.Scanner;
 
 public class ID_number_check {
 	
-	public static void main(String[] args) {
+	public static void main() {
 		int i, j;
 		String userinput;
 		Scanner scanner = new Scanner(System.in);

@@ -24,19 +24,19 @@ public class OperatorEx {
 		System.out.println("double Type : "+result+", Int type : "+(int)result);
 		System.out.println("");
 		
-		while(true) {
+		while(true) {//제어문
 			System.out.print("점수를 입력해주세요(0~100) >>");
 			studentscore = scanner.nextInt();
-			if (studentscore<=100&&studentscore>=0) {
+			if (studentscore<=100&&studentscore>=0) {//조건문
 				grade = studentscore >= 90 ? "A":
 											studentscore >= 80 ? "B":
 											studentscore >= 70 ? "C":
 											studentscore >= 60 ? "D" : "F";							
-				System.out.println("등급 : "+grade);
-				System.exit(0);
+				System.out.println("등급 : "+grade+"\n");
+				return;//MainManu로 돌아가기 위한 코드
 			}
 			else 
-				System.out.println("점수는 0~100 사이의 값만 입력해주세요/");
+				System.out.println("\n점수는 0~100 사이의 값만 입력해주세요\n");//유효하지 않은 값을 입력시 출력되는 텍스트
 				
 			}
 		}

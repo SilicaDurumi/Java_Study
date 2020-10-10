@@ -2,7 +2,7 @@ package BasicExample;
 
 import java.util.Scanner;
 
-public class Sum_Factorial {
+public class SumOfnumber {
 
 	public static void SumOf1toNumber() {
 		Scanner scanner = new Scanner(System.in);
@@ -13,7 +13,7 @@ public class Sum_Factorial {
 		i = scanner.nextInt();
 		
 		for (j= 0; j <= i; j++) {
-			stack +=j;
+			stack +=j;			//1부터 입력받은 값까지의 합을 계산
 		}
 		
 		System.out.println("1에서 "+i+" 까지의 합은 : "+stack);

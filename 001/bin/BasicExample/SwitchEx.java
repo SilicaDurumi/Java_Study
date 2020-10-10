@@ -17,7 +17,7 @@ public class SwitchEx {
 		System.out.print("고객 코드를 입력해주세요(C,B,A) >> ");
 		inputcode = scanner.next().toUpperCase().charAt(0);
 
-		switch (inputcode) {
+		switch (inputcode) {//입력받은 변수 inputcode에 따라 실행
 			case 'C':
 				output = "Normal";
 				break;

@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class ID_number_check {
 	
-	public static void main() {
+	public static void IdnumberInput() {
 		int i, j;
 		String userinput;
 		Scanner scanner = new Scanner(System.in);
@@ -24,7 +24,7 @@ public class ID_number_check {
 			for (i = 0; i < userdata.length; i++) 
 				for (j = 0; j < 5; j++) 
 					System.out.println(userdatainfo[j]+" : "+userdata[i][j]);
-			System.exit(0);
+			return;
 		}
 		else 
 			System.out.println("Invalid ID number, Write again please \n");

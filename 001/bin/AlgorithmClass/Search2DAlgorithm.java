@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Search2DAlgorithm {
-
+// 테스트 중
 	public static void main(String[] args) {
 		int j,i,m;
 		String userinput;
@@ -15,9 +15,9 @@ public class Search2DAlgorithm {
 		String[][] str = new String[2][rand];
 		
 		Random random = new Random();
-		String abc1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz가나다라마바사아자차카타파하123456789";
+		String abc1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz가나다라마바사아자차카타파하123456789";// 랜덤으로 집어넣을 문자변수
 	
-		System.out.println("Randomly Generated String \n");
+		System.out.println("임의로 생성된 문자 \n");
 		
 		for (j = 0; j < str.length; j++) {
 			for (i = 0;  i<rand; i++) {

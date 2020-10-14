@@ -27,4 +27,3 @@ public class MovieCommentPattern {
 		for (int j= 0; j < tag.length; j++) System.out.println(tag[j]+" : "+reply[j]);
 	}
 }
-// reference : https://enterkey.tistory.com/353  https://m.blog.naver.com/PostView.nhn?blogId=bb_&logNo=220863282423&proxyReferer=https:%2F%2Fwww.google.com%2F

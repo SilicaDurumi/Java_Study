@@ -2,7 +2,7 @@
 class Man {
 	String name;
 	
-	//default generator
+	//default Constructor
 	public Man(){}
 	public Man(String name) {
 		this.name = name;
@@ -16,7 +16,7 @@ class Man {
 class BusinessMan extends Man{
 	String company, position;
 	
-	//generator
+	//Constructor
 	public BusinessMan(String company, String name, String position) {
 		super(name);
 		this.company = company;

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ID_NumberEx002 {
 
-	public static void main(String[] args) {
+	public static void ReturnBirthDay() {
 		Scanner scanner = new Scanner(System.in);
 		String idNumber, birth;
 		String[] idNumberSplit = null;
@@ -20,9 +20,8 @@ public class ID_NumberEx002 {
 			Birth+=1900;
 		else if (inputchk == 3||inputchk == 4||inputchk==7||inputchk==8) 
 			Birth+=2000;
+		System.out.println("Front : "+idNumberSplit[0]);
 		System.out.println(Integer.toString(Birth)+"."+idNumberSplit[0].substring(2, 4)+"."+idNumberSplit[0].substring(4, 6)); 
 		
-		
 	}
-
 }

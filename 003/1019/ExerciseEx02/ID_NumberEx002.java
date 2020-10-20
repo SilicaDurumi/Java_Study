@@ -21,7 +21,7 @@ public class ID_NumberEx002 {
 		else if (inputchk == 3||inputchk == 4||inputchk==7||inputchk==8) 
 			Birth+=2000;
 		
-		System.out.println(idNumber.replace(idNumber.substring(8,idNumber.length()), "******"));
+		System.out.println(idNumber.replace(idNumber.substring(8,idNumber.length()), "******"));//ABC
 		System.out.println(Integer.toString(Birth)+"."+idNumberSplit[0].substring(2, 4)+"."+idNumberSplit[0].substring(4, 6)); 
 		
 	}

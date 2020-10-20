@@ -6,12 +6,13 @@ public class ID_NumberEx002 {
 
 	public static void ReturnBirthDay() {
 		Scanner scanner = new Scanner(System.in);
-		String idNumber, birth;
+		String idNumber;
 		String[] idNumberSplit = null;
-		int inputchk,Birth,i;
+		int inputchk,Birth;
 		
 		System.out.print("Write ID number : ");
 		idNumber = scanner.next();
+		scanner.close();
 		idNumberSplit = idNumber.split("-");
 		Birth = Integer.parseInt(idNumberSplit[0].substring(0, 2));
 		

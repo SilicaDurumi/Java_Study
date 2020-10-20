@@ -51,6 +51,7 @@ public class SwitchEx {
 			break;
 		// 
 		}
+	scanner.close();
 	}
 }
 		

@@ -11,7 +11,7 @@ public class SumOfnumber {
 		
 		System.out.print("정수를 입력해주세요 : ");
 		i = scanner.nextInt();
-		
+		scanner.close();	
 		for (j= 0; j <= i; j++) {
 			stack +=j;			//1부터 입력받은 값까지의 합을 계산
 		}

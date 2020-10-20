@@ -59,6 +59,7 @@ public class Simple_Game {
 			break;
 		}		
 	}
+	scanner.close();
 		
 }
 	}

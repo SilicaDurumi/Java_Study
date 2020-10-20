@@ -51,5 +51,6 @@ public static void main(String[] args) {
             break;
             }
         }
+        scanner.close();
     }
 }

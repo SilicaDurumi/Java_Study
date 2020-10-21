@@ -18,21 +18,20 @@ public class List_ToArrayMethodEx {
 			System.out.println("List"+(i+1)+" : "+strArray[i]+"");
 		System.out.println();
 	}
-	private static void runExample02() {
+	private static void runExample02(String name, int age) {
 		List<User> userList = new ArrayList<User>();
-		userList.add(new User("ABC", 10));
-		userList.add(new User("SANS", 111));
-		
+		userList.add(new User());
 		User[] userinfo = userList.toArray(new User[userList.size()]);
 		
-		userinfo[1].setAge(999);
+		userinfo[0].setAge(age);
+		userinfo[0].setName(name);
 		
 		for (int i = 0; i < userList.size(); i++) 
 			System.out.println("UserName : "+userinfo[i].getName()+"\nUserAge : "+userinfo[i].getAge()+"\n");
 	}
 	public static void main(String[] args) {
 		runExample01();
-		runExample02();
+		runExample02("NAME",100);
 		
 	}
 }

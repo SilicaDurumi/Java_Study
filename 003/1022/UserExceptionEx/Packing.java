@@ -11,20 +11,27 @@ public class Packing {
 	public Packing() {}
 
 	public void PackingDelivery(){
-		
 		bill bill = new bill();
 		
 		System.out.print("Write any requests about Delivery : ");
 		this.request = scanner.nextLine();
 		
 		System.out.print("DeliveryPayment (1.advance 2.deferred) : ");
-		userinput = scanner.nextInt();
+		
+		try {
+			userinput = scanner.nextInt();
+		} catch (Exception e) {
+			System.out.println("Only Write number");
+			
+		}
 		
 		if (userinput== 1) 
 			this.deliveryPayment = "Advance";
-		else if(userinput == 2)
+		else if(userinput == 2) 
 			this.deliveryPayment = "Deferred";
-		
+		else 
+			System.out.println("Invalid Number");
+			
 		try {
 			bill.bill(this.deliveryPayment, this.request);
 		} catch (Deliveryment e) {

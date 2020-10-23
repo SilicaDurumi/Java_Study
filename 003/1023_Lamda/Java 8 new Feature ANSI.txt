@@ -1,0 +1,9 @@
+==========================
+* New feature of Java 8
+==========================
+1. Default Method, Static Method
+2. Lamda
+3. Stream
+4. New API Package
+==========================
+

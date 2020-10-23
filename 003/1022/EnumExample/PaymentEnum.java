@@ -28,7 +28,6 @@ public enum PaymentEnum {
 			return payList.stream().anyMatch(pay -> pay.equals(code));
 		}
 		
-
 		public String getTitle() {
 			return title;
 		}

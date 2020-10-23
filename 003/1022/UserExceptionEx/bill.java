@@ -26,7 +26,7 @@ public class bill{
 		System.out.println("Payment : "+paymentEnum.getTitle());
 		payment = paymentEnum.getTitle();
 		
-		if (deliverypay==null || payment ==null ) 
+		if (deliverypay.equals("NONE") || payment.equals("NONE") ) 
 			throw new Deliveryment("Delivery and Payment must not null");
 		else
 			System.out.println("Request : "+request+"\nDeliveryment : "+deliverypay);

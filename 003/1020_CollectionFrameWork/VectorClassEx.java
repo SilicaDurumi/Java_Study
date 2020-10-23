@@ -8,7 +8,7 @@ public class VectorClassEx {
 		int i;
 		String[] name = {"DEF","BCD","EFG","CDE","ABC"};
 		
-		Vector<String> vector = new Vector<String>(4, 3);
+		Vector<String> vector = new Vector<String>(4, 3); // 4 = basic capacity of vector, 3 = Increase value when over basic capacity of vector
 		
 		System.out.println("Size of vector : "+vector.size());
 		System.out.println("Capacity of vector : "+vector.capacity()+"\n");
@@ -39,6 +39,8 @@ public class VectorClassEx {
 		System.out.println(vector+"\n");
 		
 		Collections.sort(vector,Collections.reverseOrder());
+		System.out.println("Size of vector : "+vector.size());
+		System.out.println("Capacity of vector : "+vector.capacity()+"\n");
 		System.out.println(vector+"\n");
 		
 	}

@@ -1,0 +1,72 @@
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.EventQueue;
+import java.awt.FlowLayout;
+import java.awt.Font;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+public class TEST extends JFrame {
+	JLabel timerLabel = null;
+    JLabel firstNumberLabel = null;
+    JLabel secondNumberLabel = null;
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					TEST frame = new TEST();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public TEST() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+	}
+	 public TimerTestEx() 
+	    {
+	        this.setTitle("Timer Test");
+	        Container c = this.getContentPane();
+	        c.setLayout(new FlowLayout());
+	        timerLabel = new JLabel("0");
+	        timerLabel.setFont(new Font("Gothic",Font.ITALIC,55));
+	        
+	        c.add(timerLabel);
+	        
+	        this.setSize(300,150);
+	        this.setVisible(true);
+	        double k = 5.0f;
+	        while(k>0)
+	        {
+	            timerLabel.setText(""+k);
+	            
+	            try {
+	                Thread.sleep(1000);
+	            } catch (InterruptedException e) {
+	                e.printStackTrace();
+	            }
+	            k-=1;
+	        }
+	        if (k == 0)
+	        	timerLabel.setText(""+"Time Over");
+	    }
+}

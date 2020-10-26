@@ -2,6 +2,7 @@ package Example003;
 
 class Person{
 	private String name;
+        private int age;
 	public String getName() {
 		return name;
 	}
@@ -14,7 +15,6 @@ class Person{
 	public void setAge(int age) {
 		this.age = age;
 	}
-	private int age;
 }
 
 public class Example02 {

@@ -1,16 +1,18 @@
 package GettingStream;
-
+ 
 public class Member {
-	private String name, gender;
-	private int age;
+	private String name;
+	public static final int Female = 1;
+	public static final int Male = 0;
+	int age, gender;
 	
-	public Member(String gender, String name, int age) {
+	public Member(int gender, String name, int age) {
 		this.gender = gender;
 		this.name = name;
 		this.age = age;
 	}
 	
-	public String getGender() {
+	public int getGender() {
 		return gender;
 	}
 
@@ -21,6 +23,7 @@ public class Member {
 	public int getAge() {
 		return age;
 	}
+
 
 
 }

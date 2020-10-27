@@ -8,12 +8,10 @@ class Racer extends Thread{
 		for (int i = 1; i <= 10; i++) {
 			System.out.println(getName()+" Proceed "+(i*10)+"m" );
 			
-			try {
-			sleep(500);} 
+			try {sleep(500);} 
 			catch (Exception e) {System.out.println(e.toString());}
 			System.out.println();
 		}
-		
 		System.out.println(getName()+" Goal In");
 	}
 }

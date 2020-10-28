@@ -91,8 +91,8 @@ Must use try_catch Exception process when save file and open file
         
         String path = saveFile.getDirectory() + saveFile.getFile();          
         try {
-           FileWriter writer = new FileWriter( path );
-           BufferedWriter buffwrite = new BufferedWriter(writer);
+           FileWriter writer;
+           BufferedWriter buffwrite = new BufferedWriter(new FileWriter(path));
            
            String filename = textArea.getText();                 
            
@@ -109,16 +109,16 @@ Must use try_catch Exception process when save file and open file
            String path = openFile.getDirectory()+ openFile.getFile();
            try{
                String str="";
-               FileReader fr = new FileReader(path);
-               BufferedReader br = new BufferedReader(fr);
+               FileReader fileread;
+               BufferedReader buffread = new BufferedReader(new FileReader(path));
              
                textArea.setText(""); 
                
-               while((str=br.readLine()) != null){  
+               while((str=buffread.readLine()) != null){  
                    textArea.append(str); 
                    textArea.append("\r\n"); 
                }
-               br.close();
+               buffread.close();
                String Filename = openFile.getFile();
                frame.setTitle(Filename);
               } catch(Exception e1){System.out.println(e1.toString());}
@@ -127,3 +127,26 @@ Must use try_catch Exception process when save file and open file
 }
 
 
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

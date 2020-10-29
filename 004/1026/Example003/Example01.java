@@ -8,7 +8,7 @@ public int getI() {return i;}
 
 public class Example01 {
 	public static void Example01Execute() {
-		MyClass a = new MyClass();
+		MyClass a=new MyClass();
 		a.i = 10;
 		System.out.println("a = "+a.getI());
 	}

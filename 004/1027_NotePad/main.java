@@ -32,7 +32,6 @@ Must use try_catch Exception process when save file and open file
 	}
 	
 	public main() {initialize();}
-	
 	private void initialize() {
 		frame.setBounds(100, 100, 600, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -46,23 +45,7 @@ Must use try_catch Exception process when save file and open file
 		menuBar.add(filemenu);
 		menuBar.add(helpmenu);
 
-		ButtonGroup group = new ButtonGroup();
 
-		JMenuItem open = new JMenuItem("OPEN");
-		JMenuItem save = new JMenuItem("SAVE");
-		JMenuItem close = new JMenuItem("CLOSE");
-
-		JMenuItem printinfo = new JMenuItem("INFO");
-
-		filemenu.add(open); filemenu.add(save);filemenu.add(close);
-		helpmenu.add(printinfo);
-		
-		frame.getContentPane().setLayout(new CardLayout(0, 0));
-		textArea = new JTextArea();
-		scrollPane = new JScrollPane(textArea);
-		frame.getContentPane().add(scrollPane, "name_3367768070300");
-		
-		save.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {try {
 				SaveFile();
 			} catch (IOException e1) {

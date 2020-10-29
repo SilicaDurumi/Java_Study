@@ -17,6 +17,7 @@ import javax.swing.JMenuItem;
 import java.awt.FlowLayout;
 import javax.swing.BoxLayout;
 import javax.swing.JToggleButton;
+import javax.swing.JDesktopPane;
 
 public class JpaneEx extends JFrame {
 
